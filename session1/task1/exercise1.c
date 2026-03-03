@@ -41,9 +41,14 @@ int main() {
 //TODO, need to relearn syntax and complete individual functions
 
 //ask for limit
+int ask_speed_limit() {
+  char input[20];
+  int speed_limit
   printf("Enter the speed limit: ");
   if (fgets(input, sizeof(input), stdin)) {
     sscanf(input, "%d", &speed_limit);
+}
+}
 // ask for driver speed
   printf("Enter the driver's speed: ");
   if (fgets(input, sizeof(input), stdin)) {
@@ -59,4 +64,4 @@ int main() {
     } else {
       fine = 200;
     }
-//printf function/main
+//printf function/main for combining all together
