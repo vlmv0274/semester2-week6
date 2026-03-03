@@ -37,3 +37,26 @@ int main() {
 
   return 0;
 }
+
+//TODO, need to relearn syntax and complete individual functions
+
+//ask for limit
+  printf("Enter the speed limit: ");
+  if (fgets(input, sizeof(input), stdin)) {
+    sscanf(input, "%d", &speed_limit);
+// ask for driver speed
+  printf("Enter the driver's speed: ");
+  if (fgets(input, sizeof(input), stdin)) {
+    sscanf(input, "%d", &driver_speed);
+//calculate limit vs speed
+  if (driver_speed > speed_limit) {
+    int excess_speed = driver_speed - speed_limit;
+//calculate amount over or not
+    if (excess_speed <= 10) {
+      fine = 50;
+    } else if (excess_speed <= 20) {
+      fine = 100;
+    } else {
+      fine = 200;
+    }
+//printf function/main
