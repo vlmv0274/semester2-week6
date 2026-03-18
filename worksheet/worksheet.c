@@ -71,9 +71,9 @@ int add_values(int a, int b) {
 void swap_values(int *a, int *b) {
   // TODO: Implement this function
   // Hint: You'll need a temporary variable
-  int temparg = *a;
+  int temp = *a;
   *a = *b;
-  *b = temparg;
+  *b = temp;
 }
 
 
